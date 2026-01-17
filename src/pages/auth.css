@@ -1,0 +1,131 @@
+.auth-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/* LEFT FORM SECTION */
+.auth-left {
+  width: 400px;
+  text-align: center;
+}
+
+/* TYPOGRAPHY */
+.auth-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.auth-footer {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.auth-footer-link {
+  color: #2b2f81;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+/* TEXTFIELD */
+.auth-input .MuiFilledInput-root {
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+
+.auth-input .MuiFilledInput-root:before,
+.auth-input .MuiFilledInput-root:after {
+  display: none;
+}
+
+.auth-input label {
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.login-btn,
+.signup-btn {
+  background: #2b2f81 !important;
+  border-radius: 10px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+/* RIGHT HERO SECTION */
+.auth-right {
+  position: relative;
+}
+
+.blob-img {
+  width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-img {
+  width: 360px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 2;
+}
+
+/* SIGNUP FORM EXTRA SPACING BASED ON FIGMA */
+.signup-extra {
+  margin-bottom: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .auth-container {
+    width: 95%;
+  }
+
+  .blob-img {
+    width: 380px;
+  }
+
+  .hero-img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .auth-left {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .blob-img {
+    width: 300px;
+  }
+
+  .hero-img {
+    width: 260px;
+    top: 10px;
+    left: 20px;
+  }
+}
