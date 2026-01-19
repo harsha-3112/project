@@ -46,7 +46,7 @@ const Home = () => {
       </div>
 
 
-      {/* FEATURE SECTION */}
+      {/* FEATURE SECTION  */}
       <div className="features-title">
        <span className="Red">Feature</span>  <span className="highlight">Highlights</span>
       </div>

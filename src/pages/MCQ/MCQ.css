@@ -104,5 +104,9 @@
 }
 
 .mcq-submit:hover {
+  background: #E41F3A;
+}
+
+.mcq-submit:hover {
   opacity: 0.9;
 }
