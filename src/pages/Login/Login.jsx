@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 import Blob from "../../assets/blob.png";
 import Hero from "../../assets/hero.png";

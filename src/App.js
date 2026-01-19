@@ -5,6 +5,7 @@ import Signup from "./pages/Signup/Signup";
 import MCQ from "./pages/MCQ/MCQ";
 import CodingPage from "./pages/Coding/CodingPage";
 import Home from "./pages/Home/Home";
+import Codingquestion from "./pages/Coding/Codingquestion";
 
 
 
@@ -17,7 +18,7 @@ function App() {
 
         <Route path="/" element={<Home/>} />
         <Route path="/coding" element={<CodingPage />} />
-        {/* <Route path="/coding/:id" element={<CodingQuestion />} /> */}
+        <Route path="/codingquestion" element={<Codingquestion/>} />
         <Route path="/mcq" element={<MCQ />} />
       </Routes>
     </Router>

@@ -1,16 +1,19 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import ServiceCard from "../../components/ServiceCard";
-// import Testimonial from "../../components/TestimonialCard";
+import Navbar from "../../components/Navbar/Navbar";
+import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import "./Home.css";
 
-// Assets
 import hero from "../../assets/hero.png";
 import blob from "../../assets/blob.png";
 import spark from "../../assets/spark.png";
 import solution from "../../assets/solution.png"; 
 import realtime from "../../assets/real-time.png";
 import adaptive from "../../assets/adaptive.png";
+import Testimonial from "../../components/Testimonial/Testimonial";
+import BuiltFor from "../../components/BuiltFor/BuiltFor";
+import HowItWorks from "../../components/HowItWorks/HowItWorks";
+import Subscribe from "../../components/Subscribe/Subscribe";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -47,8 +50,8 @@ const Home = () => {
       <div className="features-title">
        <span className="Red">Feature</span>  <span className="highlight">Highlights</span>
       </div>
+         <img src={spark} className="spark spark-3" alt="spark"/>
          <img src={spark} className="spark spark-4" alt="spark"/>
-         <img src={spark} className="spark spark-5" alt="spark"/>
 
 
       <div className="service-row">
@@ -68,6 +71,14 @@ const Home = () => {
           desc="Follow personalized learning paths that adapt to your level."
         />
       </div>
+      <img src={spark} className="spark spark-5" alt="spark"/>
+
+          
+          <Testimonial/>
+          <BuiltFor/>          
+          <HowItWorks/>
+          <Subscribe/>
+          <Footer/>
     </>
   );
 };

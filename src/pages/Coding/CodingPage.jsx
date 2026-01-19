@@ -4,11 +4,17 @@ import "./CodingPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import solveDefault from "../../assets/solve=default.png";
+import solveHover from "../../assets/solve-hover.png";
+
+
 library.add(fas);
 
 const CodingPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
   const questions = [
     {
@@ -49,8 +55,7 @@ const CodingPage = () => {
 
   return (
     <div className="coding-page">
-
-        <Navbar/>
+      <Navbar />
 
       {/* Title */}
       <h1 className="coding-title">
@@ -90,10 +95,14 @@ const CodingPage = () => {
             <div className="test-col">{q.testCount}</div>
             <div className="lang-col">{q.language}</div>
             <div className="action-col">
-              <button className="solve-btn">
-                {/* < alt="" className="solve-icon" /> */}
-                Solve
-              </button>
+              <button
+                className="solve-btn"
+                onClick={() => navigate("/codingquestion")}
+              onMouseEnter={(e) => (e.target.src = solveHover)}
+               onMouseLeave={(e) => (e.target.src = solveDefault)}
+                   >
+                  <img src={solveDefault} alt="solve" className="solve-icon" />
+                  </button>
             </div>
           </div>
         ))}

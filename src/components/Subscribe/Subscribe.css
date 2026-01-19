@@ -1,0 +1,103 @@
+.sub-container {
+  width: 100%;
+  padding: 100px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-box {
+  width: 100%;
+  max-width: 1100px;
+  background: #2B3D97; /* Blue */
+  border-radius: 32px;
+  padding: 60px 40px;
+  position: relative;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.sub-desc {
+  font-size: 14px;
+  opacity: 0.92;
+  color: white;
+  margin-bottom: 28px;
+}
+
+/* INPUT + BUTTON WRAPPER */
+.sub-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 90%;
+  max-width: 620px;
+  margin: 0 auto;
+  border-radius: 14px;
+  padding: 10px 12px;
+  gap: 12px;
+}
+
+/* INPUT FIELD */
+.sub-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+
+/* BUTTON */
+.sub-button {
+  background: #E41F3A;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sub-button:hover {
+  background: #363f8f;
+}
+
+/* SPARK DECORATIONS */
+.sub-spark {
+  position: absolute;
+  width: 80px;
+  opacity: 0.95;
+}
+
+.spark-lt { top: 60px; left: 300px; }
+.spark-rt { top: -8px; right: -40px; }
+.spark-lb { bottom: -20px; left: -40px; transform: rotate(25deg); }
+.spark-rb { bottom: 10px; right: 10px; transform: rotate(-15deg); }
+
+@media (max-width: 900px) {
+  .sub-box {
+    padding: 50px 20px;
+  }
+
+  .sub-input-box {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .sub-button {
+    width: 100%;
+  }
+
+  .sub-spark {
+    display: none;
+  }
+}

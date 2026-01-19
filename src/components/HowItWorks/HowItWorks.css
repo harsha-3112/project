@@ -1,0 +1,268 @@
+.how-container {
+  width: 100%;
+  min-height: 680px;
+  background: #E41F3A;
+  position: relative;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-start;
+  padding: 0;
+  overflow:visible ;
+}
+
+
+/* BACKGROUND ELLIPSE */
+.how-ellipse {
+  position: absolute;
+  left: 0;
+  height: 106%;
+  margin-bottom: -15px;
+  z-index: 1;
+}
+
+/* STUDENT IMAGE */
+.how-student {
+  position: relative;
+  z-index: 3;
+  height: 750px;
+  margin-left: 110px;
+  margin-bottom: 0;     
+}
+
+
+/* RIGHT SECTION */
+.how-right {
+  margin-left: 250px;   
+  margin-bottom: 100px;
+  z-index: 4;
+  max-width: 520px;
+}
+
+
+.how-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 45px;
+}
+
+.how-sub {
+  color: white;
+  opacity: 0.9;
+  font-size: 19px;
+  margin-bottom: 28px;
+}
+
+
+/* STEP CARD */
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 22px; 
+}
+
+.left-1 {
+  position: absolute;
+  width: 40px;
+  top: 260px;
+  right: 190px;
+  /* left: 150px; */
+  /* transform: rotate(-20deg); */
+  z-index: 5;
+}
+
+.left-2 {
+  position: absolute;
+  width: 40px;
+  top: 440px;
+  right: 190px;
+  /* left: 150px; */
+  /* transform: rotate(-20deg); */
+  z-index: 5;
+}
+
+.right-1{
+  position: absolute;
+  width: 40px;
+  top: 350px;
+  left: 830px;
+  /* transform: rotate(20deg); */
+  z-index: 5;
+}
+
+.right-2{
+  position: absolute;
+  width: 40px;
+  top: 530px;
+  left: 830px;
+  /* transform: rotate(20deg); */
+  z-index: 5;
+}
+
+.how-step {
+  background: white;
+  width: 420px;
+  height: 68px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 0 28px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+}
+.how-step::after {
+  content: "";
+  position: absolute;
+  left: 70px;   
+  top: 14px;
+  width: 1.5px;
+  height: 40px;
+  background: rgba(0,0,0,0.25); 
+  border-radius: 2px;
+}
+
+.step-no {
+  font-weight: 700;
+  font-size: 22px;
+  color: #111;
+}
+
+.step-text {
+  font-weight: 700;
+  color: #222;
+ margin-left: 10px;
+ justify-content: center;
+}
+
+/* ======================================
+   RESPONSIVE HOW IT WORKS
+====================================== */
+
+/* Tablet adjustments */
+@media (max-width: 1250px) {
+  .how-student {
+    height: 600px;
+    margin-left: 60px;
+  }
+
+  .how-right {
+    margin-left: 160px;
+  }
+
+  .how-title {
+    font-size: 52px;
+  }
+
+  .how-step {
+    width: 360px;
+  }
+
+  .left-1, .left-2, .right-1, .right-2 {
+    width: 32px;
+  }
+}
+
+/* Compact tablet */
+@media (max-width: 1050px) {
+  .how-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 20px 80px;
+    min-height: auto;
+  }
+
+  .how-ellipse {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .how-student {
+    height: 420px;
+    margin: 0 auto;
+  }
+
+  .how-right {
+    margin: 0;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .how-title {
+    font-size: 48px;
+  }
+
+  .how-sub {
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+
+  .how-steps {
+    align-items: center;
+  }
+
+  .how-step {
+    width: 420px;
+  }
+
+  /* hide absolute arrows on tablet for cleanliness */
+  .left-1, .left-2, .right-1, .right-2 {
+    display: none;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .how-student {
+    height: 340px;
+  }
+
+  .how-step {
+    width: 100%;
+    max-width: 390px;
+    height: 64px;
+    font-size: 14px;
+  }
+
+  .step-no {
+    font-size: 20px;
+  }
+
+  .how-title {
+    font-size: 38px;
+  }
+
+  .how-sub {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .how-ellipse {
+    object-fit: cover;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .how-title {
+    font-size: 32px;
+  }
+
+  .how-step {
+    max-width: 340px;
+    height: 58px;
+  }
+
+  .step-no {
+    font-size: 18px;
+  }
+
+  .how-student {
+    height: 280px;
+  }
+}
