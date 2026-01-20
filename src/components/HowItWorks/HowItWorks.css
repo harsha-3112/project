@@ -68,7 +68,6 @@
   top: 260px;
   right: 190px;
   /* left: 150px; */
-  /* transform: rotate(-20deg); */
   z-index: 5;
 }
 
@@ -78,7 +77,6 @@
   top: 440px;
   right: 190px;
   /* left: 150px; */
-  /* transform: rotate(-20deg); */
   z-index: 5;
 }
 
@@ -87,7 +85,6 @@
   width: 40px;
   top: 350px;
   left: 830px;
-  /* transform: rotate(20deg); */
   z-index: 5;
 }
 
@@ -96,7 +93,6 @@
   width: 40px;
   top: 530px;
   left: 830px;
-  /* transform: rotate(20deg); */
   z-index: 5;
 }
 
@@ -137,120 +133,57 @@
  justify-content: center;
 }
 
-/* ======================================
-   RESPONSIVE HOW IT WORKS
-====================================== */
 
-/* Tablet adjustments */
+/* ===== Tablet (<= 1250px) ===== */
 @media (max-width: 1250px) {
   .how-student {
-    height: 600px;
-    margin-left: 60px;
+    height: 610px;
+    margin-left: 70px;
   }
 
   .how-right {
-    margin-left: 160px;
-  }
-
-  .how-title {
-    font-size: 52px;
+    margin-left: 180px;
   }
 
   .how-step {
-    width: 360px;
+    width: 380px;
   }
 
   .left-1, .left-2, .right-1, .right-2 {
-    width: 32px;
+    transform: scale(0.9);
   }
 }
 
-/* Compact tablet */
+/* ===== Medium Tablet (<= 1050px) ===== */
 @media (max-width: 1050px) {
   .how-container {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 60px 20px 80px;
+    padding: 70px 20px 100px;
     min-height: auto;
   }
 
   .how-ellipse {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
   .how-student {
-    height: 420px;
+    height: 440px;
     margin: 0 auto;
   }
 
   .how-right {
     margin: 0;
-    margin-top: 20px;
-    max-width: 100%;
+    margin-top: 30px;
     text-align: center;
-  }
-
-  .how-title {
-    font-size: 48px;
-  }
-
-  .how-sub {
-    font-size: 17px;
-    margin-bottom: 24px;
+    max-width: 100%;
   }
 
   .how-steps {
     align-items: center;
-  }
-
-  .how-step {
-    width: 420px;
-  }
-
-  /* hide absolute arrows on tablet for cleanliness */
-  .left-1, .left-2, .right-1, .right-2 {
-    display: none;
-  }
-}
-
-/* Mobile Layout */
-@media (max-width: 768px) {
-  .how-student {
-    height: 340px;
-  }
-
-  .how-step {
-    width: 100%;
-    max-width: 390px;
-    height: 64px;
-    font-size: 14px;
-  }
-
-  .step-no {
-    font-size: 20px;
-  }
-
-  .how-title {
-    font-size: 38px;
-  }
-
-  .how-sub {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-
-  .how-ellipse {
-    object-fit: cover;
-  }
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-  .how-title {
-    font-size: 32px;
   }
 
   .how-step {

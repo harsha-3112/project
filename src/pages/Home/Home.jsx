@@ -6,9 +6,9 @@ import "./Home.css";
 import hero from "../../assets/hero.png";
 import blob from "../../assets/blob.png";
 import spark from "../../assets/spark.png";
-import solution from "../../assets/solution.png"; 
-import realtime from "../../assets/real-time.png";
-import adaptive from "../../assets/adaptive.png";
+import solution from "../../assets/solution-gylph.png"
+import realtime from "../../assets/real-time gylph.png"
+import adaptive from "../../assets/adaptive-gylph.png"
 import Testimonial from "../../components/Testimonial/Testimonial";
 import BuiltFor from "../../components/BuiltFor/BuiltFor";
 import HowItWorks from "../../components/HowItWorks/HowItWorks";
@@ -57,7 +57,7 @@ const Home = () => {
       <div className="service-row">
         <ServiceCard
           icon={solution}
-          title= "Solution  Walkthroughs"
+          title= "Solution Walkthroughs"
           desc="See multiple approaches to each coding challenge."
         />
         <ServiceCard

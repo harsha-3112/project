@@ -1,194 +1,81 @@
-/* MAIN PAGE CONTAINER */
+/* MAIN CONTAINER */
 .signup-container {
-  width: 1248px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  align-items: flex-start;
+  max-width:1248px;
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  padding-top:50px;
+  align-items:flex-start;
 }
 
-
-/* LEFT FORM SECTION */
+/* FORM BLOCK */
 .signup-form-block {
-  width: 606px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width:606px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
 }
 
-
-/* TITLE BLOCK (Figma accurate) */
 .signup-title-block {
-  width: 606px;
-  text-align: center;
-  margin-bottom: 24px;
+  max-width:606px;
+  width:100%;
+  text-align:center;
+  margin-bottom:24px;
 }
-
 .signup-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 8px;
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:6px;
 }
 
-.signup-subtitle {
-  font-size: 15px;
-  font-weight: 400;
-  color: #666;
-}
-
-
-/* INPUT GROUP (gap like screenshot) */
 .signup-input-block {
-  width: 606px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-bottom: 20px;
+  max-width:606px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-bottom:20px;
 }
-
-
-/* ---- MUI INPUT OVERRIDES ---- */
-
-/* Background + radius */
-.signup-input .MuiFilledInput-root {
-  background: #f6f6f6 !important;
-  border-radius: 10px !important;
-  height: 50px !important;
-}
-
-/* Remove underline */
-.signup-input .MuiFilledInput-root:before,
-.signup-input .MuiFilledInput-root:after {
-  display: none !important;
-}
-
-/* LABEL TEXT (Email, Full name, etc.) */
-.signup-input label {
-  color: #000 !important;
-  font-weight: 600 !important;
-  font-size: 14px;
-}
-
-/* Prevent blue label on focus */
-.signup-input .MuiInputLabel-filled.Mui-focused {
-  color: #000 !important;
-}
-
-/* PLACEHOLDER (Black + bold) */
-.signup-input .MuiInputBase-input::placeholder {
-  color: #000 !important;
-  opacity: 1 !important;
-  font-weight: 600 !important;
-}
-
-/* INPUT TEXT (typed text) */
-.signup-input .MuiFilledInput-input {
-  color: #000 !important;
-  font-weight: 600 !important;
-}
-
-/* Prevent MUI blue focus color */
-.signup-input .MuiFilledInput-root.Mui-focused {
-  background: #f6f6f6 !important;
-}
-
-.signup-input .MuiFilledInput-root.Mui-focused .MuiFilledInput-input {
-  color: #000 !important;
-}
-
-
 
 .signup-btn {
-  width: 606px !important;
-  height: 50px !important;
-  background: #2B2F81 !important;
-  border-radius: 10px !important;
-  text-transform: none !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  font-style: bold;
-  margin-top: 30px;
+  max-width:606px !important;
+  width:100% !important;
+  height:50px !important;
+  background:#2B2F81 !important;
+  border-radius:10px !important;
+  font-size:16px !important;
+  font-weight:500 !important;
+  margin-top:30px;
 }
 
-
-/* FOOTER TEXT BELOW BUTTON */
-.signup-footer {
-  font-size: 14px;
-  margin-top: 18px;
-  text-align: center;
-  color: #3b3b3b;
+.signup-btn:hover {
+  background:#e41f3a
+   !important;
 }
 
-/* Inline link = RED like screenshot */
-.signup-footer-link {
-  color: #DB1A34;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-
-/* RIGHT HERO SECTION */
+/* HERO GROUP */
 .signup-hero-block {
-  width: 543px;
-  height: 680px;
-  position: relative;
+  width:543px;
+  height:680px;
+  position:relative;
+  transform-origin:top center;
+  transform:scale(1);
 }
 
-.signup-blob-img {
-  width: 540px;
-  position: relative;
-  z-index: 1;
-}
-
-.signup-hero-img {
-  width: 420px;
-  position: absolute;
-  top: 50px;
-  left: 55px;
-  z-index: 2;
-}
-
-
-/* ---- RESPONSIVE ---- */
-@media (max-width: 1100px) {
+/* RESPONSIVE */
+@media (max-width:1100px) {
   .signup-container {
-    width: 95%;
-  }
-
-  .signup-form-block,
-  .signup-input-block,
-  .signup-btn {
-    width: 100% !important;
-  }
-
-  .signup-hero-block {
-    width: 400px;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width:600px) {
   .signup-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .signup-blob-img {
-    width: 360px;
-  }
-
-  .signup-hero-img {
-    width: 280px;
-    left: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .signup-blob-img,
-  .signup-hero-img {
-    width: 240px;
+    padding:0 24px;
   }
 }

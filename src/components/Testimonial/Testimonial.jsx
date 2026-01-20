@@ -2,7 +2,6 @@ import React from "react";
 import "./Testimonial.css";
 import TestimonialCard from "./TestimonialCard";
 
-// Background + assets
 import bg from "../../assets/testi-bg.png";
 import userImg from "../../assets/testi-image.png";
 
@@ -12,21 +11,21 @@ const testimonialData = [
     role: "Student",
     review:
       "Thanks to CodeArena, I went from barely understanding loops to solving advanced algorithm challenges. I can't recommend it enough to fellow students!",
-    img: userImg,
+    image: userImg,
   },
   {
     name: "Nutan Sai",
     role: "Student",
     review:
       "Thanks to CodeArena, I went from barely understanding loops to solving advanced algorithm challenges. I can't recommend it enough to fellow students!",
-    img: userImg,
+    image: userImg,
   },
   {
     name: "Nutan Sai",
     role: "Student",
     review:
       "Thanks to CodeArena, I went from barely understanding loops to solving advanced algorithm challenges. I can't recommend it enough to fellow students!",
-    img: userImg,
+    image: userImg,
   },
 ];
 
@@ -40,21 +39,16 @@ const Testimonial = () => {
       
 
       <div className="testi-grid">
-        {testimonialData.map((item, index) => (
-          <div
-            className="testi-col"
-            key={index}
-            style={{ transform: `translateY(${index * 100}px)` }} 
-          >
-            <TestimonialCard
-              name={item.name}
-              role={item.role}
-              review={item.review}
-              image={item.img}
-            />
-          </div>
-        ))}
-      </div>
+  {testimonialData.map((item, index) => (
+    <div
+      className={`testi-col ${index === 1 ? "mid" : index === 2 ? "low" : ""}`}
+      key={index}
+    >
+      <TestimonialCard {...item} />
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

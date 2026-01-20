@@ -1,10 +1,9 @@
 import React from "react";
 import "./TestimonialCard.css";
 
-// Assets
 import stars from "../../assets/stars.png";
 import testiLogo from "../../assets/testi-logo.png";
-import quote from "../../assets/comma.png"; // red big quote icon
+import quote from "../../assets/comma.png"; 
 
 const TestimonialCard = ({ name, role, review, image }) => {
   return (

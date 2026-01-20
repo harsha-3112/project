@@ -1,14 +1,18 @@
 .service-card {
-  width: 403px;
+  width: 100%;
+  max-width: 403px;
   height: 320px;
-  padding: 40px 24px 40px 24px;
+  padding: 40px 24px;
   background: #ffffff;
   border-radius: 12px;
   border: 3px solid #e41f3a;
   text-align: center;
   transition: 0.25s ease;
   cursor: pointer;
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .service-card:hover {
@@ -16,38 +20,114 @@
   transform: translateY(-4px);
 }
 
+.service-card:hover .service-icon-wrapper {
+  background: #363f8f;
+}
 
+
+/* === ICON WRAPPER === */
 .service-icon-wrapper {
-  background: rgb(255, 255, 255);
+  background: #e41f3a;
   padding: 12px;
-  border-radius: 50%;
+  border-radius: 20%;
   width: fit-content;
-  margin: auto;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
+/* ICON IMAGE */
 .service-icon {
-  width: 68px;
-  height: 68px;
-  border-radius: 15px;
-  filter: none;
+  width: 30px;
+  height: 35px;
+  margin-bottom: -5px;
 }
 
+
+/* === TEXT === */
 .service-title {
-  width: 355px;
   font-size: 30px;
   font-weight: 600;
+  margin-top: 50px;
   margin-bottom: 25px;
-  line-height: 100%;
-  font-style: semibold poppins;
   color: #222;
+  line-height: 1.1;
+  width: 100%;
+  max-width: 355px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-desc {
   font-size: 16px;
   font-weight: 500;
-  font-style: medium poppins;
   color: #484848;
-  line-height: 100% ;
-  letter-spacing: 0%;
+  line-height: 1.2;
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .service-card {
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  .service-title {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+
+  .service-desc {
+    font-size: 15px;
+  }
+
+  .service-icon-wrapper {
+    padding: 10px;
+  }
+
+  .service-icon {
+    width: 28px;
+    height: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .service-card {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .service-title {
+    font-size: 24px;
+  }
+
+  .service-desc {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  .service-card {
+    width: 95%;
+    padding: 28px 16px;
+  }
+
+  .service-title {
+    font-size: 22px;
+  }
+
+  .service-desc {
+    font-size: 14px;
+  }
+
+  .service-icon {
+    width: 25px;
+    height: 28px;
+  }
 }

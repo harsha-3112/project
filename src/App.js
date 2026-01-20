@@ -6,6 +6,7 @@ import MCQ from "./pages/MCQ/MCQ";
 import CodingPage from "./pages/Coding/CodingPage";
 import Home from "./pages/Home/Home";
 import Codingquestion from "./pages/Coding/Codingquestion";
+import AuthLayout from "./pages/AuthLayout";
 
 
 
@@ -13,8 +14,10 @@ function App() {
   return (
     <Router>
       <Routes>
+         <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+         </Route>
 
         <Route path="/" element={<Home/>} />
         <Route path="/coding" element={<CodingPage />} />

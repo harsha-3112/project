@@ -101,3 +101,86 @@
     display: none;
   }
 }
+
+
+/* Large Tablet (<=1100px) — prevent overlap before stacking */
+@media (max-width: 1100px) {
+  .sub-input-box {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+/* Tablet (<=900px) — stack input & button */
+@media (max-width: 900px) {
+  .sub-container {
+    padding: 80px 24px;
+  }
+
+  .sub-box {
+    padding: 48px 24px;
+  }
+
+  .sub-input-box {
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  .sub-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .sub-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .sub-spark {
+    display: none;
+  }
+}
+
+/* Mobile (<=600px) */
+@media (max-width: 600px) {
+  .sub-container {
+    padding: 64px 18px;
+  }
+
+  .sub-title {
+    font-size: 26px;
+  }
+
+  .sub-desc {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .sub-input-box {
+    max-width: 100%;
+  }
+}
+
+/* Small Mobile (<=420px) */
+@media (max-width: 420px) {
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .sub-box {
+    padding: 40px 18px;
+  }
+
+  .sub-input {
+    font-size: 14px;
+  }
+
+  .sub-button {
+    font-size: 14px;
+  }
+}

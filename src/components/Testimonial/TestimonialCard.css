@@ -110,105 +110,17 @@
   opacity: 0.92;
 }
 
-/* --- RESPONSIVE --- */
+
 @media (max-width: 900px) {
   .tcard {
-    width: 90%;
-  }
-
-  .tcard-top {
-    width: 100%;
-  }
-
-  .tcard-img {
-    width: 81px;
-    height: 81px;
-    top: -10px;
-    left: -10px;
-    position: absolute;
-  }
-
-  .tcard-info,
-  .tcard-stars-row {
-    margin-left: 60px;
-  }
-
-  .tcard-review {
-    font-size: 15px;
-  }
-
-  .tcard-stars {
-    width: 90px;
-  }
-}
-
-/* =========================================
-   RESPONSIVE FIXES FOR TESTIMONIAL SECTION
-========================================= */
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .testi-container {
-    height: auto;
-    padding: 100px 30px 120px;
-  }
-
-  .testi-title {
-    font-size: 48px;
-    margin-bottom: 40px;
+    overflow: visible 
   }
 
   .testi-grid {
-    gap: 32px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .testi-container {
-    height: auto; /* IMPORTANT: removes overflow */
-    padding: 80px 20px 100px;
-  }
-
-  .testi-bg {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .testi-title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 32px;
-  }
-
-  .testi-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .testi-col {
-    width: 100%;
-    max-width: 420px;
-    transform: translateY(0px) !important;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  .testi-title {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 24px;
+    overflow: visible 
   }
 
   .testi-container {
-    padding: 60px 16px 80px;
-  }
-
-  .testi-col {
-    max-width: 360px;
+    overflow-x: hidden 
   }
 }
-

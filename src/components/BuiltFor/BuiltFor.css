@@ -52,15 +52,13 @@
   object-fit: cover;
 }
 
-/* overlay layer */
 .built-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.42); /* closer to screenshot */
+  background: rgba(0,0,0,0.42); 
   z-index: 2;
 }
 
-/* card text */
 .built-text {
   position: absolute;
   z-index: 3;
@@ -97,7 +95,6 @@
   background: #E41F3A;
 }
 
-/* responsive */
 @media (max-width: 900px) {
   .built-row {
     flex-direction: column;

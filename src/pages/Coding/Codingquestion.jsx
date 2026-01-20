@@ -37,7 +37,7 @@ function Codingquestion() {
           2. ARR May Contain Duplicate Elements.
         </p>
 
-        <p className={styles.text}>
+        <p className={styles.text}> 
           For Example, If ARR = [0, 1, 1, 5] And K = 1, Then The First And Last
           Occurrence Of 1 Will Be 1(0 - Indexed) And
         </p>
