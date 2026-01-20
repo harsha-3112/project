@@ -70,10 +70,11 @@
 
 
 /* Tablet */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .service-card {
     height: auto;
     padding: 32px 20px;
+    
   }
 
   .service-title {
@@ -98,8 +99,9 @@
 /* Mobile */
 @media (max-width: 600px) {
   .service-card {
-    width: 90%;
+    width: 80%;
     max-width: 100%;
+    /* margin-left: auto; */
   }
 
   .service-title {
